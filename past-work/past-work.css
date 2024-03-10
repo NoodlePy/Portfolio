@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.img_containers {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+img {
+    width: 267.3px;
+    height: 302.3px;
+    cursor: pointer;
+}
+
+img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+

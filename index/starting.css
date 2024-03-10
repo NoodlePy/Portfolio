@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.surround {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 0;
+}
+
+.text_container {
+    color: #222222;
+    font-size: 30px;
+}
+
+.arrow_img_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100vh);
+    z-index: 1; /* Ensures the image is above other content */
+}
+
+.arrow_img {
+    height: 200px;
+    width: 200px;
+    background-image: url(Arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slide-out {
+    animation: slideOut 2s forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.fade {
+    color: white;
+    animation: fadeIn 2s;
+}
+
+.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_contain{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px;
+}
+
+.main_text {
+    text-align: center;
+    color: white;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 26px;
+    margin-bottom: 10vh;
+}
+
+h2  {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+    }
+    to {
+        transform: scale(1);
+        width: 50vw;
+        height: 50vh;
+    }
+}
+
+.cube {
+    border-radius: 50%;
+    margin: 3vw;
+    margin-top: 15vh;
+    width: 50vw;
+    height: 50vh;
+    margin-right: 2.2vw;
+    margin-left: 2.2vw;
+}
+
+@keyframes appear_linear {
+    from {height: 0px;}
+    to {height: 415px;}
+}
+
+.line {
+    margin: 0.5vw;
+    margin-top: 3vw;
+    width: 1px;
+    background-color: white;
+    margin-right: 3.5vw;
+}
+
+
+.main_body {
+    display: flex;
+    position: absolute;
+    right: 0;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
